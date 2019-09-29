@@ -1,11 +1,6 @@
 # VS Code settings json
 
 My own json settings. Mostly for python optimized. Linting, folding.
-
-Used plugins
-
-    autoDocstrings
-    Block Travel
     
 ```python
 {
@@ -37,3 +32,21 @@ Used plugins
     "editor.autoClosingBrackets": "never"
 }
 ```
+
+# Used plugins
+That may be necessary for some of settings
+
+- autoDocstrings
+- Block Travel
+- Bracket Select
+- Conde Runner
+- Comment Anchors
+- GitLens
+- Live Server (for web developing)
+- Markdown Preview Enhanced
+- Python
+- Rainbow Brackets
+- SQL Server (mssql) - If you use database
+- Visual Studio IntelliCode
+- Code Jupyter Notebook - For viewing jupyters (using is already in Python extension)
+- WakaTime
