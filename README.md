@@ -7,7 +7,7 @@ My own json settings. Mostly for python optimized. Linting, folding.
 - autoDocstrings
 - Block Travel
 - Bracket Select
-- Conde Runner
+- Code Runner
 - Comment Anchors
 - GitLens
 - Live Server (for web developing)
