@@ -10,10 +10,12 @@ My own json settings. Mostly for python optimized. Linting, folding.
 - Code Runner
 - Comment Anchors
 - GitLens
+- GitKraken Glo
 - Live Server (for web developing)
 - Markdown Preview Enhanced
 - Python
 - Rainbow Brackets
+- Settings Sync
 - SQL Server (mssql) - If you use database
 - Visual Studio IntelliCode
 - Code Jupyter Notebook - For viewing jupyters (using is already in Python extension)
