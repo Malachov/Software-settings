@@ -1,4 +1,4 @@
-# VS Code plugins and settings json
+# VS Code plugins, settings JSON, keyboard shortcuts JSON
 
 My own json settings. Mostly for python optimized. Linting, folding.
 
