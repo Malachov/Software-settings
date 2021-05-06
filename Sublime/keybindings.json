@@ -1,11 +1,11 @@
 [
-	
-	{ "keys": ["alt+up"], "command": "swap_line_up" },
-	{ "keys": ["alt+down"], "command": "swap_line_down" },
-	{ "keys": ["alt+shift+down"], "command": "duplicate_line" },
-	{ "keys": ["alt+shift+up"], "command": "duplicate_line" },
-	{ "keys": ["ctrl+b"], "command": "toggle_side_bar" },
-	{ "keys": ["ctrl+shift+alt+up"], "command": "select_lines", "args": {"forward": false} },
-	{ "keys": ["ctrl+shift+alt+down"], "command": "select_lines", "args": {"forward": true} },
-
+  { "keys": ["alt+up"], "command": "swap_line_up" },
+  { "keys": ["alt+down"], "command": "swap_line_down" },
+  { "keys": ["alt+shift+down"], "command": "duplicate_line" },
+  { "keys": ["alt+shift+up"], "command": "duplicate_line" },
+  { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+  { "keys": ["ctrl+shift+alt+up"], "command": "select_lines", "args": { "forward": false } },
+  { "keys": ["ctrl+shift+alt+down"], "command": "select_lines", "args": { "forward": true } },
+  { "keys": ["ctrl+shift+a"], "command": "toggle_comment", "args": { "block": false } },
+  { "keys": ["alt+a"], "command": "expand_selection", "args": { "to": "scope" } }
 ]

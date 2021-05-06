@@ -1,0 +1,96 @@
+{
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "[yaml]": {
+    "editor.tabSize": 2
+  },
+  "autoDocstring.docstringFormat": "google",
+  "breadcrumbs.enabled": true,
+  "code-runner.executorMap": {
+    "python": "$pythonPath $fullFileName"
+  },
+  "code-runner.runInTerminal": true,
+  "commentAnchors.workspace.enabled": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.autoClosingBrackets": "never",
+  "editor.detectIndentation": false,
+  "editor.folding": true,
+  "editor.fontSize": 14,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": true,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "editor.showFoldingControls": "always",
+  "editor.suggestSelection": "first",
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 4,
+  "editor.wordWrap": "on",
+  "files.associations": {
+    "*.js": "javascript"
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
+  "gitlens.views.repositories.branches.layout": "list",
+  "go.useLanguageServer": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "jupyter.askForKernelRestart": false,
+  "jupyter.interactiveWindowMode": "perFile",
+  "jupyter.textOutputLimit": 100000,
+  "liveServer.settings.port": 0,
+  "liveshare.authenticationProvider": "GitHub",
+  "markdown.preview.breaks": true,
+  "markdown.preview.fontSize": 10,
+  "markdown.preview.lineHeight": 1,
+  "npm.autoDetect": "on",
+  "npm.includeDirectories": ["gui"],
+  "prettier.printWidth": 100,
+  "prettier.bracketSpacing": true,
+  "python.formatting.blackArgs": ["--line-length", "110"],
+  "python.formatting.provider": "black",
+  "python.jediMemoryLimit": -1,
+  "python.languageServer": "Pylance",
+  "python.linting.flake8Args": ["--ignore=E303, E501, E225, E266, E402, E265", "--verbose"],
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.testing.autoTestDiscoverOnSaveEnabled": false,
+  "python.testing.pytestArgs": ["-vv", "--vv", "--color=yes"],
+  "terminal.external.linuxExec": "/usr/bin/gnome-terminal",
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "vetur.ignoreProjectWarning": true,
+  "window.zoomLevel": 1,
+  "workbench.activityBar.visible": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+}
