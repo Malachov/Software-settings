@@ -4,7 +4,23 @@ My own json settings. Mostly for python optimized. Linting, folding.
 
 Used plugins, global settings and key bindings should be synced by VS Code, but for sure it's here
 
+## Settings, keybindings and debug config
+
+`settings.json`, `keybindings.json` and `launch.json` are in separate files.
+
+## Tips and How tos
+
+Pylance import warning - set in workspace settings json
+
+"python.analysis.extraPaths": ["NAME_OF_LIBRARY"],
+
 ## Used plugins
+
+### Must have
+
+- Python
+- Pylance
+- Pyright
 
 ### General
 
@@ -40,12 +56,10 @@ Used plugins, global settings and key bindings should be synced by VS Code, but 
 ### Python
 
 - autoDocstrings
-- Pylance
-- Python
-- Python Docstrin Generator
+- Python Docstring Generator
 - reStructuredText
 
-### Not used but good
+### Misc
 
 - Block Travel
 - Excel Viewer
@@ -55,18 +69,3 @@ Used plugins, global settings and key bindings should be synced by VS Code, but 
 - SQLTools
 - Sourcery
 - WakaTime
-
-## Settings and keybindings
-
-settings.json and keybindings.JSON are in separate files.
-
-## Tips and How tos
-
-Better debug - In debugger settings use
-
-      "console": "internalConsole",
-      "justMyCode": true
-
-Pylance import warning - set in workspace settings json
-
-"python.analysis.extraPaths": ["NAME_OF_LIBRARY"],
