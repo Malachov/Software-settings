@@ -16,12 +16,6 @@ Pylance import warning - set in workspace settings json
 
 ## Used plugins
 
-### Must have
-
-- Python
-- Pylance
-- Pyright
-
 ### General
 
 - Bracket Pair Colorizer
@@ -55,6 +49,8 @@ Pylance import warning - set in workspace settings json
 
 ### Python
 
+- Python
+- Pylance
 - autoDocstrings
 - Python Docstring Generator
 - reStructuredText
