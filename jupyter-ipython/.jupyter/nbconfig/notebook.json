@@ -1,0 +1,11 @@
+{
+  "load_extensions": {
+    "rise": false,
+    "nbextensions_configurator/config_menu/main": true,
+    "code_prettify/autopep8": false,
+    "jupyter-js-widgets/extension": true
+  },
+  "rise": {
+    "scroll": true
+  }
+}
