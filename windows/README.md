@@ -1,8 +1,18 @@
 # Things to do on every windows
 
-**powerpoint template**
-Copy file from `powerpoint` subfolder into `C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Templates\Document Themes`
-Jump to next template panel with `ctrl + enter`
+**Install all apps with winget**
+
+First install winget with [link on store](https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1?activetab=pivot:overviewtab)
+
+Run in powershell
+
+**Download font**
+
+[Hack Nerd Font Mono](https://www.nerdfonts.com/font-downloads)
+
+**PowerToys**
+
+Double ctrl focus display detail
 
 **Create new file options**
 Edit create new option with [this tool](https://sourceforge.net/projects/shellnewhandler/)
@@ -25,3 +35,4 @@ For example from [this tutorial](https://pureinfotech.com/install-windows-subsys
 **Install ubuntu distro**
 
 From microsoft store
+

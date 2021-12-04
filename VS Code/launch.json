@@ -11,6 +11,14 @@
       "program": "${file}",
       "console": "internalConsole",
       "justMyCode": false
+    },
+    {
+      "name": "Python: As module",
+      "type": "python",
+      "request": "launch",
+      "module": "${relativeFileDirname}.${fileBasenameNoExtension}", // If submodule, use "${relativeFileDirname}.MYSUBMODULE.${fileBasenameNoExtension}"
+      "console": "internalConsole"
+      //   "justMyCode": false // Not working here
     }
     //// If uncomment `"justMyCode": false` works, but cannot be restarted
     // {
