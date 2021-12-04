@@ -1,11 +1,5 @@
 # Things to do on every windows
 
-**Install all apps with winget**
-
-First install winget with [link on store](https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1?activetab=pivot:overviewtab)
-
-Run in powershell
-
 **Download font**
 
 [Hack Nerd Font Mono](https://www.nerdfonts.com/font-downloads)
@@ -22,7 +16,7 @@ Remove unnecessary options in 7zip with options.
 
 **Allow executing script**
 
-In powershell as admin
+In windows terminal (powershell) as admin
 
 ```console
 Set-ExecutionPolicy RemoteSigned
