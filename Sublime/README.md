@@ -5,10 +5,9 @@ settings.json and keybindings.json are in separate files.
 # Plugins
 
 - Guna
+- One Dark Material - Theme
 - MarkdownLivePreview
 - MarkdownPreview
-- One Dark Material - Theme
-- Package Control
 - Pretty JSON
 - Python 3
 - Sublimelint

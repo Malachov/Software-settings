@@ -12,6 +12,29 @@
       }
     },
     {
+      "label": "Push to PyPi",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/utils/push_script.py",
+        "--deploy",
+        "True",
+        "--test",
+        "False",
+        "--reformat",
+        "False",
+        "--version",
+        "--commit_and_push_git",
+        "False",
+        "--sphinx_docs",
+        "False"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
       "label": "Hooks & push & deploy",
       "type": "shell",
       "command": "python",
