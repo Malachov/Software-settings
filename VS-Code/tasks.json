@@ -1,0 +1,79 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build app",
+      "command": "${command:python.interpreterPath}",
+      "args": ["${workspaceFolder}/utils/build_script.py"]
+    },
+    {
+      "label": "Hooks & push & deploy",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/utils/push_script.py",
+        "--version",
+        "${input:version}",
+        "--commit_message",
+        "${input:commit_message}",
+        "--tag",
+        "${input:tag}",
+        "--tag_message",
+        "${input:tag-message}",
+        "--test",
+        "True",
+        "--reformat",
+        "True",
+        "--sphinx_docs",
+        "True",
+        "--deploy",
+        "True"
+      ]
+    },
+    {
+      "label": "Push to PyPi",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "mypythontools.cicd", "--do_only", "deploy"]
+    },
+    {
+      "label": "Pytest with coverage",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "mypythontools.cicd", "--do_only", "test"]
+    },
+    {
+      "label": "Sync requirements",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "mypythontools.cicd", "--do_only", "sync_requirements"]
+    },
+    {
+      "label": "Docs regenerate",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "mypythontools.cicd", "--do_only", "docs"]
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "version",
+      "description": "Version in __init__.py will be overwritten. Version has to be in format like '1.0.3' three digits and two dots. If None, nothing will happen. If 'increment', than it will be updated by 0.0.1.",
+      "default": "increment"
+    },
+    {
+      "type": "promptString",
+      "id": "commit_message",
+      "description": "Git message for commit.",
+      "default": "New commit"
+    },
+    {
+      "type": "promptString",
+      "id": "tag",
+      "description": "Git tag. If '__version__' is used, then tag from version in __init__.py will be derived. E.g. 'v1.0.1' from '1.0.1'",
+      "default": "__version__"
+    },
+    {
+      "type": "promptString",
+      "id": "tag-message",
+      "description": "Git tag message.",
+      "default": "New version"
+    }
+  ]
+}
