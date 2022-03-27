@@ -1,14 +1,17 @@
+// Interpreter path env var not working. Replace or setup path manually
+// venv/310/Scripts/python.exe
+
 {
   "version": "2.0.0",
   "tasks": [
     {
       "label": "Build app",
-      "command": "${command:python.interpreterPath}",
+      "command": "venv/310/Scripts/python.exe",
       "args": ["${workspaceFolder}/utils/build_script.py"]
     },
     {
       "label": "Hooks & push & deploy",
-      "command": "${command:python.interpreterPath}",
+      "command": "venv/310/Scripts/python.exe",
       "args": [
         "${workspaceFolder}/utils/push_script.py",
         "--version",
@@ -18,36 +21,28 @@
         "--tag",
         "${input:tag}",
         "--tag_message",
-        "${input:tag-message}",
-        "--test",
-        "True",
-        "--reformat",
-        "True",
-        "--sphinx_docs",
-        "True",
-        "--deploy",
-        "True"
+        "${input:tag-message}"
       ]
     },
     {
       "label": "Push to PyPi",
-      "command": "${command:python.interpreterPath}",
-      "args": ["-m", "mypythontools.cicd", "--do_only", "deploy"]
+      "command": "venv/310/Scripts/python.exe",
+      "args": ["-m", "mypythontools_cicd", "--do_only", "deploy"]
     },
     {
       "label": "Pytest with coverage",
-      "command": "${command:python.interpreterPath}",
-      "args": ["-m", "mypythontools.cicd", "--do_only", "test"]
+      "command": "venv/310/Scripts/python.exe",
+      "args": ["-m", "mypythontools_cicd", "--do_only", "test"]
     },
     {
       "label": "Sync requirements",
-      "command": "${command:python.interpreterPath}",
-      "args": ["-m", "mypythontools.cicd", "--do_only", "sync_requirements"]
+      "command": "venv/310/Scripts/python.exe",
+      "args": ["-m", "mypythontools_cicd", "--do_only", "sync_requirements"]
     },
     {
       "label": "Docs regenerate",
-      "command": "${command:python.interpreterPath}",
-      "args": ["-m", "mypythontools.cicd", "--do_only", "docs"]
+      "command": "venv/310/Scripts/python.exe",
+      "args": ["-m", "mypythontools_cicd", "--do_only", "docs"]
     }
   ],
   "inputs": [

@@ -9,6 +9,7 @@ try {
         "filezilla",
         "firefox",
         "git",
+        "go",
         "googlechrome",
         "krita",
         "microsoft-teams",
@@ -26,7 +27,6 @@ try {
     	"treesizefree",
         "vscode",
         "whatsapp",
-    	"python ./waf all",
     	"wsl2",
         "wsl-ubuntu-2004",
     ) | foreach {choco install $_ -Confirm:$false}
