@@ -1,7 +1,7 @@
 try {
     (
         "1clipboard",
-	    "anaconda3",
+	"anaconda3",
         "audacity",
         "avastfreeantivirus",
         "blender",
