@@ -1,23 +1,24 @@
-// Interpreter path env var not working. Replace or setup path manually
-// venv/310/Scripts/python.exe
-
 {
+  ///////////////
+  // As nev var for current python venv didn't work, setup in code with bulk edit
+  ///////////////
+
   "version": "2.0.0",
   "tasks": [
     {
       "label": "Build app",
-      "command": "venv/310/Scripts/python.exe",
+      "command": "venv/3.10/Scripts/python.exe",
       "args": ["${workspaceFolder}/utils/build_script.py"]
     },
     {
-      "label": "Hooks & push & deploy",
-      "command": "venv/310/Scripts/python.exe",
+      "label": "Release",
+      "command": "venv/3.10/Scripts/python.exe",
       "args": [
         "${workspaceFolder}/utils/push_script.py",
         "--version",
         "${input:version}",
-        "--commit_message",
-        "${input:commit_message}",
+        "--git_commit_all",
+        "${input:git_commit_all}",
         "--tag",
         "${input:tag}",
         "--tag_message",
@@ -25,37 +26,51 @@
       ]
     },
     {
+      "label": "Prepare venvs",
+      "command": "venv/3.10/Scripts/python.exe",
+      "args": [
+        "-m",
+        "mypythontools_cicd",
+        "--do_only",
+        "prepare_venvs",
+        "--prepare_venvs",
+        "['3.8', '3.10', 'wsl-3.8', 'wsl-3.10']",
+        "--allowed_branches",
+        "None"
+      ]
+    },
+    {
       "label": "Push to PyPi",
-      "command": "venv/310/Scripts/python.exe",
+      "command": "venv/3.10/Scripts/python.exe",
       "args": ["-m", "mypythontools_cicd", "--do_only", "deploy"]
     },
     {
       "label": "Pytest with coverage",
-      "command": "venv/310/Scripts/python.exe",
-      "args": ["-m", "mypythontools_cicd", "--do_only", "test"]
+      "command": "venv/3.10/Scripts/python.exe",
+      "args": ["-m", "mypythontools_cicd", "--do_only", "test", "--allowed_branches", "None"]
     },
     {
       "label": "Sync requirements",
-      "command": "venv/310/Scripts/python.exe",
-      "args": ["-m", "mypythontools_cicd", "--do_only", "sync_requirements"]
+      "command": "venv/3.10/Scripts/python.exe",
+      "args": ["-m", "mypythontools_cicd", "--do_only", "sync_requirements", "--allowed_branches", "None"]
     },
     {
       "label": "Docs regenerate",
-      "command": "venv/310/Scripts/python.exe",
-      "args": ["-m", "mypythontools_cicd", "--do_only", "docs"]
+      "command": "venv/3.10/Scripts/python.exe",
+      "args": ["-m", "mypythontools_cicd", "--do_only", "docs", "--allowed_branches", "None"]
     }
   ],
   "inputs": [
     {
       "type": "promptString",
       "id": "version",
-      "description": "Version in __init__.py will be overwritten. Version has to be in format like '1.0.3' three digits and two dots. If None, nothing will happen. If 'increment', than it will be updated by 0.0.1.",
+      "description": "Version. Version in __init__.py will be overwritten. Version has to be in format like '1.0.3' three digits and two dots. If None, nothing will happen. If 'increment', than it will be updated by 0.0.1.",
       "default": "increment"
     },
     {
       "type": "promptString",
-      "id": "commit_message",
-      "description": "Git message for commit.",
+      "id": "git_commit_all",
+      "description": "git_commit_all. Commit message when commiting all the changes from repo. Use empty if want to commit changes.",
       "default": "New commit"
     },
     {

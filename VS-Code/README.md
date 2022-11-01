@@ -14,7 +14,24 @@ Pylance import warning - set in workspace settings json
 
 "python.analysis.extraPaths": ["NAME_OF_LIBRARY"],
 
-## Used plugins
+## Tasks
+
+Here is small tutorial how to use it. Run command `Tasks: Open User Tasks`, add tasks from github/content/tasks or if you have no task yet, you can copy / paste all.
+
+Install extension **Task Explorer**
+
+On root copy folder `utils` from tools/tasks
+
+You are ready to go. You should see something like this
+
+.. image:: /_static/tasks.png
+    :width: 620
+    :alt: tasks
+    :align: center
+
+You can do CI / CD pipeline or Build app with one click now.
+
+## Some of used plugins
 
 ### General
 
