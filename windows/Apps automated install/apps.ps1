@@ -1,7 +1,7 @@
 try {
     (
         "1clipboard",
-	"anaconda3",
+	    "anaconda3",
         "audacity",
         "avastfreeantivirus",
         "blender",
@@ -11,6 +11,8 @@ try {
         "git",
         "go",
         "googlechrome",
+        "googledrive",
+        "joplin",
         "krita",
         "microsoft-teams",
         "microsoft-windows-terminal",
