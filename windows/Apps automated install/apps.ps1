@@ -1,7 +1,7 @@
 try {
     (
         "1clipboard",
-	    "anaconda3",
+	"anaconda3",
         "audacity",
         "avastfreeantivirus",
         "blender",
@@ -27,7 +27,8 @@ try {
         "qbittorrent",
     	"sublimetext4",
     	"treesizefree",
-        "vscode",
+        "vlc",
+	"vscode",
         "whatsapp",
     	"wsl2",
         "wsl-ubuntu-2004",
