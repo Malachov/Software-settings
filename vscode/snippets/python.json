@@ -1,9 +1,4 @@
 {
-
-  ///////////////
-  // User snippets are usually in %USERPROFILE%\AppData\Roaming\Code\User\snippets
-  /////////////
-
   // Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and
   // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
   // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
@@ -17,21 +12,6 @@
   // 	],
   // 	"description": "Log output to console"
   // }
-  "Local import": {
-    "prefix": "import_local",
-    "body": [
-      "",
-      "",
-      "# TODO delete me",
-      "import sys",
-      "from pathlib import Path",
-      "sys.path.insert(0, Path('C:/Users/Malac/ownCloud/Github/' + '$1').as_posix())",
-      "import $1",
-      "",
-      ""
-    ],
-    "description": "Insert local library instead of pip."
-  },
 
   "If __name == '__main__'": {
     "prefix": "'If __name == '__main__':",
@@ -39,15 +19,28 @@
     "description": "Insert logic to skip file if not main."
   },
 
-  "Check library": {
-    "prefix": "if not importlib.util.find_spec(\"$1\"):",
+  "from __future__ import annotations": {
+    "prefix": "from __future__ import annotations",
+    "body": ["from __future__ import annotations"],
+    "description": "Insert library allowing type hints for older python versions."
+  },
+
+  "Print visible": {
+    "prefix": "print_visible",
     "body": [
-      "if not importlib.util.find_spec(\"$1\"):",
-      "raise ModuleNotFoundError(",
-      "    mylogging.return_str(",
-      "        \"Library $1 is necessary and not installed. Use \\n\\n\\t`pip install $1`\"",
-      "    )",
-      ")"
+        "print(f\"\\n\\n\\n {$1} \\n\\n\\n\")"
+        
+    ]
+},
+
+"Check if installed": {
+    "prefix": "check_if_installed",
+    "body": [
+        "try:"
+        "    import numpy"
+        "except  ModuleNotFoundError:"
+        "    raise ModuleNotFoundError('$1')",
+
     ]
   }
 }

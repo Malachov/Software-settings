@@ -1,0 +1,98 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "debug.allowBreakpointsEverywhere": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": true,
+    "editor.quickSuggestionsDelay": 0,
+    "editor.renderWhitespace": "none",
+    "editor.rulers": [
+        110
+    ],
+    "editor.showFoldingControls": "always",
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    // "editor.suggest.showKeywords": false,
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 4,
+    //   "editor.wordWrap": "on",
+    "emmet.triggerExpansionOnTab": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // "chat.viewSessions.orientation": "stacked",
+    "explorer.confirmPasteNative": false,
+    "files.associations": {
+        "*.js": "javascript"
+    },
+    "git.allowForcePush": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.suggestSmartCommit": false,
+    "launch": {
+        "configurations": [
+            {
+                "console": "internalConsole",
+                "justMyCode": false,
+                "name": "Python: Current File",
+                "program": "${file}",
+                "request": "launch",
+                "type": "debugpy"
+            }
+        ],
+        "version": "0.2.0"
+    },
+    // "gitlens.hovers.annotations.changes": false,
+    // "gitlens.codeLens.authors.enabled": false,
+    // "gitlens.codeLens.recentChange.enabled": false, // in modern version
+    // "gitlens.hovers.annotations.details": false,
+    // "gitlens.hovers.annotations.enabled": false,
+    // "gitlens.views.repositories.branches.layout": "list",
+    // "gitlens.hovers.currentLine.over": "line",
+    // "gitlens.currentLine.enabled": false,
+    // "gitlens.advanced.messages": {
+    //     "suppressCommitHasNoPreviousCommitWarning": true
+    // },
+    // "markdown.preview.breaks": true,
+    "markdown.preview.fontSize": 10,
+    "markdown.preview.lineHeight": 1,
+    // "files.exclude": {
+    //     "**.egg-info": true,
+    //     "**/__pycache__": true,
+    //     "**/.idea": true,
+    //     "**/.ipynb_checkpoints": true,
+    //     "**/.pytest_cache": true
+    // },
+    "outline.showVariables": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    // "terminal.integrated.gpuAcceleration": "off",
+    "search.exclude": {
+        "**/.git": true,
+        "**/build/**": true,
+        "**/node_modules": true,
+        "**/venv/**": true
+    },
+    // "rewrap.wrappingColumn": 110,
+    "terminal.integrated.allowMnemonics": true,
+    "terminal.integrated.defaultProfile.linux": "fish",
+    // "terminal.integrated.fontFamily": "monospace",
+    "testing.automaticallyOpenPeekView": "failureAnywhere",
+    "testing.followRunningTest": true,
+    "workbench.colorTheme": "Visual Studio Dark",
+    // "workbench.colorCustomizations": {
+    //     "scrollbarSlider.background": "#b45858ad"
+    // },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.startupEditor": "none"
+}
