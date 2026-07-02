@@ -83,7 +83,18 @@
     },
     // "rewrap.wrappingColumn": 110,
     "terminal.integrated.allowMnemonics": true,
+    "terminal.integrated.profiles.linux": {
+        "fish": {
+            "path": "/usr/bin/fish"
+        },
+        "bash": {
+            "path": "/bin/bash"
+        }
+    },
     "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.automationProfile.linux": {
+        "path": "/bin/bash"
+    },
     // "terminal.integrated.fontFamily": "monospace",
     "testing.automaticallyOpenPeekView": "failureAnywhere",
     "testing.followRunningTest": true,
@@ -94,5 +105,33 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "chat.viewSessions.orientation": "stacked",
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.findInFiles"
+    ],
+    "chat.hookFilesLocations": {
+        ".github/hooks": true,
+        ".claude/settings.local.json": true,
+        ".claude/settings.json": true,
+        "~/.copilot/hooks": true,
+        "~/.claude/settings.json": true,
+        "~/.agents/hooks": true
+    },
+    "python.terminal.useEnvFile": true,
+    "window.newWindowProfile": "Default",
+    "chat.tools.terminal.autoApprove": {
+        "curl": true,
+        "nmcli": true,
+        "journalctl": true,
+        "man": true,
+        "printf": true,
+        "resolvectl": true,
+        "printenv": true
+    },
+    "chat.mcp.serverSampling": {
+        "Azure MCP Server Provider: Azure MCP": {
+            "allowedDuringChat": true
+        }
+    }
 }
